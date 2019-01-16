@@ -10,7 +10,7 @@ RUN apk add --update \
   && rm -rf /var/cache/apk/*
 
 # the name of an archived meteor app
-RUN METEOR_APP="ec-line-beta"
+ARG METEOR_APP="ec-line-beta"
 
 ADD ${METEOR_APP}.tar.gz /
 
